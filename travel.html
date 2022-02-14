@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="travel.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,500&family=Faster+One&family=Salsa&display=swap');
+    </style>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <figure class="logo">
+                <img class="logo1" src="logo.png" alt="imagen de cabecera">
+            </figure>
+            <h1 class="header__titulo">VIAJES CODENOTCH</h1>
+            <section class="header2">
+                <h2>Agencia de Viajes.</h2>
+            </section> 
+        </header>
+
+        <section class="principal">
+
+            <section class="prinicipal__1">
+                <figure class="imagen1">
+                    <img class="foto1" src="fondo1.png" alt="presentacion">
+                </figure>
+                <article class="texto">
+                    <p class="texto1">
+                        Viajes Codenotch te brinda la oportunidad de realizar
+                        tu viaje con la seguridad de que siempre habrá alguien velando por 
+                        tus intereses. Viajes en familia, de pareja, propuestas de fin de 
+                        semana, vacaciones de verano, lunas de miel, así como viajes 
+                        profesionales y de negocios, viajes de incentivos, congresos y 
+                        convenciones; todo ello con tarifas económicas muy ventajosas y 
+                        un servicio "a la medida". <br/><br/>
+                        Nuestro compromiso por la calidad y el servicio pasa hoy por el 
+                        empleo de las más avanzadas tecnologías, tanto al servicio de 
+                        nuestros agentes y profesionales, como de nuestros clientes que 
+                        interactúan online con nuestros productos. <br/><br/>
+                        Reserva 24 horas al día a través de nuestra web, con total seguridad
+                        y con las mejores tarifas a tu alcance.
+                    </p>
+                </article>
+            </section>
+            <section class="principal__2">
+                <article class="card">
+                    <figure class="imagen2">
+                        <img class="foto2" src="mallorca.jpg" alt="mallorca">
+                    </figure>
+                    <div class="card__texto">
+                        <h3 class="card__titulo">Escapada a Mallorca</h3>
+                        <p class="card__info"> 
+                            Una ciudad cada vez más cosmopolita, 
+                            con una bonita arquitectura y rodeada de bellas playas. 
+                            ¡La combinación perfecta para tu escapada!
+                        </p>
+                    </div>
+                    <button class="boton">MÁS INFO</button>
+                </article>
+                <article class="card">
+                    <figure class="imagen2">
+                        <img class="foto2" src="menorca.jpg" alt="menorca">
+                    </figure>
+                    <div class="card__texto">
+                        <h3 class="card__titulo">Vive Menorca</h3>
+                        <p class="card__info">
+                            ¡El paraíso está más cerca de lo que piensas! 
+                            Playas interminables y calas paradisiacas con agua 
+                            color turquesa te harán soñar y olvidarte de todo.
+                        </p>
+                    </div>
+                    <button class="boton">MÁS INFO</button>
+                </article>
+                <article class="card">
+                    <figure class="imagen2">
+                        <img class="foto2" src="tenerife.jpg" alt="tenerife">
+                    </figure>
+                    <div class="card__texto">
+                        <h3 class="card__titulo">Disfruta Tenerife en Semana Santa</h3>
+                        <p class="card__info">
+                            Ven a Tenerife y disfruta de sus contrastes. 
+                            Una isla sorprendente por su diversidad, clima 
+                            y autenticidad.
+                        </p>
+                    </div>
+                    <button class="boton">MÁS INFO</button>
+                </article>
+            </section>
+        </section>
+
+        <form class="formulario" >
+            <div class="input">
+                <input  onkeyup="teclado()" type="text" class="input__text" id="name" name="name" placeholder="Nombre*">
+                <input type="origen" class="input__text" id="origen" name="origen" placeholder="Origen*">
+                <input type="destino" class="input__text" id="destino" name="destino" placeholder="Destino*">
+                <input type="ocupacion" class="input__text" id="ocupacion" name="ocupacion" placeholder="Ocupacion*">
+                <input type="fecha" class="input__text" id="fecha" name="fecha" placeholder="Fecha*">
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="condiciones" >
+                <label for="condiciones">Aceptar terminos y condiciones</label>
+            </div>
+            
+            <div class="botones">
+                <button  onclick="solicitudes()" id="btn1" class="boton" type="reset" >Solicitar Info</button>
+                <button  onclick="filtrado()" id="btn2" class="boton" type="reset" >Filtrar Busqueda</button>
+            </div>
+
+            <div id="final" class="bloqueFinal">
+                
+            </div>
+        </form>
+    </main>
+    
+    <script src="travel.js"></script>
+</body>
+</html>
