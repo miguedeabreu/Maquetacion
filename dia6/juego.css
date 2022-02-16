@@ -1,0 +1,226 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: [x0]1fr [x1]1fr [x2]1fr [x3]1fr [x4];
+    grid-template-rows: [y0]1fr [y1]1fr [y2]1fr [y3]1fr [y4];
+    width: 100%;
+}
+
+.container1{
+    background-color: yellow;
+    grid-column: x0 / x1;
+    grid-row: y0 / y2;
+}
+
+.nombre__juego{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.container2{
+    background-color: yellow;
+    grid-column: x1 / x2;
+    grid-row: y0 / y1;
+    text-align: center;
+}
+
+.container3{
+    background-color: yellow;
+    grid-column: x2 / x3;
+    grid-row: y0 / y1;
+    text-align: center;
+}
+
+.container4{
+    background-color: yellow;
+    grid-column: x3 / x4;
+    grid-row: y0 / y1;
+    text-align: center;
+}
+
+.nombres{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn__puntuar1{
+    margin-top: 20px;
+    text-decoration:none;
+    font-weight:200;
+    font-size:20px;
+    color:#ffffff;
+    padding-bottom:0px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color: #000080;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn__contador{
+    margin-top: 20px;
+    text-decoration:none;
+    font-weight:200;
+    font-size:20px;
+    color:#ffffff;
+    padding-bottom:0px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#000080;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn__puntuar2{
+    margin-top: 20px;
+    text-decoration:none;
+    font-weight:200;
+    font-size:20px;
+    color:#ffffff;
+    padding-bottom:0px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#000080;;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 20px;
+    border: none;
+}
+
+.container5{
+    background-color: yellow;
+    grid-column: x0 / x1;
+    grid-row: y2 / y3;
+}
+
+.container6{
+    background-color: yellow;
+    grid-column: x0 / x1;
+    grid-row: y3 / y4;
+}
+
+.container7{
+    background-color: yellow;
+    grid-column-start: x1;
+    grid-column-end: x4;
+    grid-row-start: y1;
+    grid-row-end: y4;
+    height: 450px;
+    display: grid;
+    grid-template-columns:[x0]1fr [x1]1fr [x2]1fr [x3]1fr [x4]1fr [x5]1fr [x6]1fr [x7]1fr [x8]1fr [x9]1fr;
+    grid-template-rows:[y0]1fr [y1]1fr [y2]1fr [y3]1fr [y4]1fr;
+}
+
+.btn__clear{
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration:none;
+    font-weight:200;
+    font-size:20px;
+    color:#ffffff;
+    padding-bottom:0px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:blue;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn__reseat{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration:none;
+    font-weight:200;
+    font-size:20px;
+    color:#ffffff;
+    padding-bottom:0px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:red;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 20px;
+    border: none;
+}
+
+.tablero1{
+    background-color: #FF92AE;
+    grid-column: x2 / x3;
+    grid-row: y1 / y2;
+    font-family: 'Press Start 2P', cursive;
+    color:#ffffff;
+    font-size: 70px;
+    text-align: center;
+    
+}
+
+.tablero2{
+    background-color: #00F6FF;
+    grid-column: x3 / x4;
+    grid-row: y1 / y2;
+}
+
+.tablero3{
+    background-color: #FF92AE;
+    grid-column: x4 / x5;
+    grid-row: y1 / y2;
+}
+
+.tablero4{
+    background-color: #00F6FF;
+    grid-column: x2 / x3;
+    grid-row: y2 / y3;
+}
+
+.tablero5{
+    background-color: #FF92AE;
+    grid-column: x3 / x4;
+    grid-row: y2 / y3;
+}
+
+.tablero6{
+    background-color: #00F6FF;
+    grid-column: x4 / x5;
+    grid-row: y2 / y3;
+}
+
+.tablero7{
+    background-color: #FF92AE;
+    grid-column: x2 / x3;
+    grid-row: y3 / y4;
+}
+
+.tablero8{
+    background-color: #00F6FF;
+    grid-column: x3 / x4;
+    grid-row: y3 / y4;
+}
+
+.tablero9{
+    background-color: #FF92AE;
+    grid-column: x4 / x5;
+    grid-row: y3 / y4;
+}
+
+.imagen{
+    grid-column: x6 / x9;
+    grid-row: y1 / y4;
+}
+
+.photo1{
+    height: 310px;
+    width: 300px;
+}
