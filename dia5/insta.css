@@ -1,0 +1,24 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: [x0]1fr [x1]1fr [x2]1fr [x3]1fr [x4];
+    grid-template-rows: [y0]1fr [y1]1fr;
+    width: 100%;
+}
+
+.contenedor2{
+    background-color: blue;
+    grid-column: x1 / x2;
+    grid-row: y0 / y1;
+}
+
+.contenedor3{
+    background-color: red;
+    grid-column: x2 / x3;
+    grid-row: y0 / y1;
+}
